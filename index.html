@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro de Assistidos | AMIS</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header class="cabecalho">
+            <span class="tag">Projeto de Extensão</span>
+
+            <h1>Cadastro de Assistidos</h1>
+
+            <p>
+                Protótipo de sistema para organização e digitalização
+                dos cadastros de assistidos da AMIS.
+            </p>
+        </header>
+
+
+        <form id="formCadastro">
+
+            <!-- DADOS DO ASSISTIDO -->
+            <section class="form-section">
+
+                <div class="section-header">
+                    <span class="section-number">01</span>
+
+                    <div>
+                        <h2>Dados do assistido</h2>
+                        <p>Informe os dados pessoais do beneficiário.</p>
+                    </div>
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="campo campo-full">
+                        <label for="nomeAssistido">
+                            Nome completo
+                        </label>
+
+                        <input
+                            type="text"
+                            name="nomeAssistido"
+                            id="nomeAssistido"
+                            placeholder="Digite o nome completo"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="dataNascimento">
+                            Data de nascimento
+                        </label>
+
+                        <input
+                            type="date"
+                            name="dataNascimento"
+                            id="dataNascimento"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="documento">
+                            Documento
+                        </label>
+
+                        <input
+                            type="text"
+                            name="documento"
+                            id="documento"
+                            placeholder="CPF ou RG"
+                        >
+                    </div>
+
+
+                    <div class="campo campo-full">
+                        <label for="projeto">
+                            Projeto / atividade
+                        </label>
+
+                        <select
+                            name="projeto"
+                            id="projeto"
+                            required
+                        >
+                            <option value="">
+                                Selecione o projeto
+                            </option>
+
+                            <option value="bale">
+                                Balé
+                            </option>
+
+                            <option value="futsal">
+                                Futsal
+                            </option>
+
+                            <option value="judo">
+                                Judô
+                            </option>
+
+                            <option value="coral">
+                                Coral
+                            </option>
+
+                            <option value="sopro">
+                                Orquestra - Sopro
+                            </option>
+
+                            <option value="corda">
+                                Orquestra - Corda
+                            </option>
+
+                            <option value="semear">
+                                Semear
+                            </option>
+
+                            <option value="coletivo-jovem">
+                                Coletivo Jovem
+                            </option>
+
+                            <option value="barista">
+                                Barista
+                            </option>
+
+                            <option value="artesanato-em-tecido">
+                                Artesanato em Tecido
+                            </option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- DOCUMENTOS -->
+            <section class="form-section">
+
+                <div class="section-header">
+                    <span class="section-number">02</span>
+
+                    <div>
+                        <h2>Documentação</h2>
+                        <p>Documentos necessários para o cadastro.</p>
+                    </div>
+                </div>
+
+
+                <div class="documentos">
+
+                    <div class="documento">
+                        <label for="declaracaoEscolar">
+                            Declaração escolar
+                        </label>
+
+                        <input
+                            type="file"
+                            name="declaracaoEscolar"
+                            id="declaracaoEscolar"
+                        >
+                    </div>
+
+
+                    <div class="documento">
+                        <label for="atestadoFisico">
+                            Atestado de aptidão física
+                        </label>
+
+                        <input
+                            type="file"
+                            name="atestadoFisico"
+                            id="atestadoFisico"
+                        >
+                    </div>
+
+
+                    <div class="documento">
+                        <label for="declaracaoVacina">
+                            Declaração de vacina
+                        </label>
+
+                        <input
+                            type="file"
+                            name="declaracaoVacina"
+                            id="declaracaoVacina"
+                        >
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- RESPONSÁVEL -->
+            <section class="form-section">
+
+                <div class="section-header">
+                    <span class="section-number">03</span>
+
+                    <div>
+                        <h2>Dados do responsável</h2>
+                        <p>Informações do responsável pelo assistido.</p>
+                    </div>
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="campo campo-full">
+                        <label for="nomeResponsavel">
+                            Nome completo
+                        </label>
+
+                        <input
+                            type="text"
+                            name="nomeResponsavel"
+                            id="nomeResponsavel"
+                            placeholder="Digite o nome completo"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="rg">
+                            RG
+                        </label>
+
+                        <input
+                            type="text"
+                            id="rg"
+                            name="rg"
+                            placeholder="Digite o RG"
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="cpf">
+                            CPF
+                        </label>
+
+                        <input
+                            type="text"
+                            id="cpf"
+                            name="cpf"
+                            placeholder="Digite o CPF"
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="telefone">
+                            Telefone
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="telefone"
+                            name="telefone"
+                            placeholder="(00) 00000-0000"
+                        >
+                    </div>
+
+
+                    <div class="campo">
+                        <label for="endereco">
+                            Endereço
+                        </label>
+
+                        <input
+                            type="text"
+                            name="endereco"
+                            id="endereco"
+                            placeholder="Rua, número e bairro"
+                        >
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- BOTÃO -->
+            <div class="form-footer">
+
+                <p>
+                    Protótipo para validação e aprimoramento junto à gestão da AMIS.
+                </p>
+
+                <button
+                    type="submit"
+                    class="botao"
+                >
+                    Cadastrar assistido
+                </button>
+
+            </div>
+
+        </form>
+
+    </main>
+
+</body>
+</html>
