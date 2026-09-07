@@ -277,7 +277,7 @@ input::placeholder {
 
 /* BOTÃO */
 
-.botao {
+.botao, .botao-secundario {
     border: none;
 
     padding: 13px 24px;

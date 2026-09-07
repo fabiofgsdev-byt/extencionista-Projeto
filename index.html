@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +26,7 @@
         </header>
 
 
-        <form id="formCadastro">
+        <form id="formCadastro" class="formulario">
 
             <!-- DADOS DO ASSISTIDO -->
             <section class="form-section">
@@ -47,13 +48,8 @@
                             Nome completo
                         </label>
 
-                        <input
-                            type="text"
-                            name="nomeAssistido"
-                            id="nomeAssistido"
-                            placeholder="Digite o nome completo"
-                            required
-                        >
+                        <input type="text" name="nomeAssistido" id="nomeAssistido" placeholder="Digite o nome completo"
+                            required>
                     </div>
 
 
@@ -62,12 +58,7 @@
                             Data de nascimento
                         </label>
 
-                        <input
-                            type="date"
-                            name="dataNascimento"
-                            id="dataNascimento"
-                            required
-                        >
+                        <input type="date" name="dataNascimento" id="dataNascimento" required>
                     </div>
 
 
@@ -76,12 +67,7 @@
                             Documento
                         </label>
 
-                        <input
-                            type="text"
-                            name="documento"
-                            id="documento"
-                            placeholder="CPF ou RG"
-                        >
+                        <input type="text" name="documento" id="documento" placeholder="CPF ou RG">
                     </div>
 
 
@@ -90,11 +76,7 @@
                             Projeto / atividade
                         </label>
 
-                        <select
-                            name="projeto"
-                            id="projeto"
-                            required
-                        >
+                        <select name="projeto" id="projeto" required>
                             <option value="">
                                 Selecione o projeto
                             </option>
@@ -166,11 +148,7 @@
                             Declaração escolar
                         </label>
 
-                        <input
-                            type="file"
-                            name="declaracaoEscolar"
-                            id="declaracaoEscolar"
-                        >
+                        <input type="file" name="declaracaoEscolar" id="declaracaoEscolar">
                     </div>
 
 
@@ -179,11 +157,7 @@
                             Atestado de aptidão física
                         </label>
 
-                        <input
-                            type="file"
-                            name="atestadoFisico"
-                            id="atestadoFisico"
-                        >
+                        <input type="file" name="atestadoFisico" id="atestadoFisico">
                     </div>
 
 
@@ -192,11 +166,7 @@
                             Declaração de vacina
                         </label>
 
-                        <input
-                            type="file"
-                            name="declaracaoVacina"
-                            id="declaracaoVacina"
-                        >
+                        <input type="file" name="declaracaoVacina" id="declaracaoVacina">
                     </div>
 
                 </div>
@@ -224,13 +194,8 @@
                             Nome completo
                         </label>
 
-                        <input
-                            type="text"
-                            name="nomeResponsavel"
-                            id="nomeResponsavel"
-                            placeholder="Digite o nome completo"
-                            required
-                        >
+                        <input type="text" name="nomeResponsavel" id="nomeResponsavel"
+                            placeholder="Digite o nome completo" required>
                     </div>
 
 
@@ -239,12 +204,7 @@
                             RG
                         </label>
 
-                        <input
-                            type="text"
-                            id="rg"
-                            name="rg"
-                            placeholder="Digite o RG"
-                        >
+                        <input type="text" id="rg" name="rg" placeholder="Digite o RG">
                     </div>
 
 
@@ -253,12 +213,7 @@
                             CPF
                         </label>
 
-                        <input
-                            type="text"
-                            id="cpf"
-                            name="cpf"
-                            placeholder="Digite o CPF"
-                        >
+                        <input type="text" id="cpf" name="cpf" placeholder="Digite o CPF">
                     </div>
 
 
@@ -267,12 +222,7 @@
                             Telefone
                         </label>
 
-                        <input
-                            type="tel"
-                            id="telefone"
-                            name="telefone"
-                            placeholder="(00) 00000-0000"
-                        >
+                        <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000">
                     </div>
 
 
@@ -281,12 +231,7 @@
                             Endereço
                         </label>
 
-                        <input
-                            type="text"
-                            name="endereco"
-                            id="endereco"
-                            placeholder="Rua, número e bairro"
-                        >
+                        <input type="text" name="endereco" id="endereco" placeholder="Rua, número e bairro">
                     </div>
 
                 </div>
@@ -297,16 +242,14 @@
             <!-- BOTÃO -->
             <div class="form-footer">
 
-                <p>
-                    Protótipo para validação e aprimoramento junto à gestão da AMIS.
-                </p>
 
-                <button
-                    type="submit"
-                    class="botao"
-                >
+                <button type="submit" class="botao">
                     Cadastrar assistido
                 </button>
+
+                <a href="./cadastros.html" class="botao botao-secundario">
+                    Visualizar cadastros
+                </a>
 
             </div>
 
@@ -315,4 +258,7 @@
     </main>
 
 </body>
+
+<script src="script.js"></script>
+
 </html>
