@@ -34,7 +34,7 @@ const responsavel = {
   rg: rgResponsavel.value,
   cpf: cpfResponsavel.value,
   telefone: telefoneResponsavel.value,
-  endereço: endereco.value
+  endereco: endereco.value
   
 };
 
@@ -56,4 +56,11 @@ localStorage.setItem(
 
 console.log("Cadastros salvos:", cadastros);
 
+});
+
+const sair = document.querySelector("#sair");
+
+sair.addEventListener("click", function () {
+    sessionStorage.removeItem("logado");
+    window.location.href = "login.html";
 });

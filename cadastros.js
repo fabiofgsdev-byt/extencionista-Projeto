@@ -43,7 +43,7 @@ cadastros.forEach((cadastro) => {
         </p>
         
         <p>
-            <strong>Endereço:</strong>
+            <strong>Endereco:</strong>
             ${cadastro.responsavel.endereco}
         </p>
 

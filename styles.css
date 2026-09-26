@@ -312,6 +312,23 @@ input::placeholder {
     transform: translateY(0);
 }
 
+.cabecalho{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.botao-sair{
+    background:#333;
+    color:white;
+    border:none;
+    padding:10px 18px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
 
 /* RESPONSIVIDADE */
 

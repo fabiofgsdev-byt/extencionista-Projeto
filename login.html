@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | AMIS</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <main class="login-container">
+
+    <div class="logo">
+      <h1>AMIS</h1>
+      <p>Associação Morumbi de Integração Social</p>
+    </div>
+
+    <form id="loginForm" class="login-box">
+
+      <h2>Entrar no sistema</h2>
+
+      <div class="campo">
+        <label for="usuario">Usuário</label>
+        <input
+          type="text"
+          id="usuario"
+          placeholder="Digite seu usuário"
+          required
+        >
+      </div>
+
+      <div class="campo">
+        <label for="senha">Senha</label>
+        <input
+          type="password"
+          id="senha"
+          placeholder="Digite sua senha"
+          required
+        >
+      </div>
+
+      <button type="submit" class="botao">
+        Entrar
+      </button>
+
+      <p id="erro" class="erro"></p>
+
+    </form>
+
+  </main>
+
+  <script src="login.js"></script>
+
+</body>
+</html>
